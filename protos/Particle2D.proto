@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package dottheory;
+
+import "Dot2D.proto";
+
+message Particle2D {
+  repeated Dot2D dots = 1;
+}

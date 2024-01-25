@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dottheory;
+
+import "DotData.proto";
+import "Particle2D.proto";
+import "UiState.proto";
+
+message AppState {
+  DotData data = 1;
+
+  UiState ui = 2;
+
+  map<string, Particle2D> particles = 3;
+}

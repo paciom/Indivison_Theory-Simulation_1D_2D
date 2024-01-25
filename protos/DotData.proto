@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dottheory;
+
+import "Dot2D.proto";
+
+message DotData {
+  double initialAreaWidth = 1;
+  double initialAreaHeight = 2;
+  double collisionRadius = 3;
+  int64 seed = 4;
+  int64 numberOfDots = 5;
+  int64 time = 6;
+  map<int64, Dot2D>  dots = 7;
+}

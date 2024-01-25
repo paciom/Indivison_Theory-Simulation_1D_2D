@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package dottheory;
+
+message ProtoOffset {
+  double dx = 1;
+  double dy = 2;
+}

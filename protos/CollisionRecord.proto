@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package dottheory;
+
+import "ProtoOffset.proto";
+
+message CollisionRecord {
+  int64 dotId = 1;
+  int64 time = 2;
+  ProtoOffset location = 3;
+}

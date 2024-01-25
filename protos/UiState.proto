@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package dottheory;
+
+import "ProtoOffset.proto";
+import "ProtoSize.proto";
+
+message UiState {
+  double scale = 1;
+  double dotPaintRadius = 2;
+
+  ProtoOffset scaleCenter = 3;
+  ProtoOffset panCenter = 4;
+
+  int64 maxTrailAge = 5;
+
+  bool running = 6;
+
+  bool showConnection = 7;
+
+  ProtoSize size = 8;
+  bool showPositionHistory = 9;
+}

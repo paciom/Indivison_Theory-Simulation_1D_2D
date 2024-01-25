@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package dottheory;
+
+import "ProtoOffset.proto";
+
+message LocationSwapRecord {
+  ProtoOffset start = 1;
+  ProtoOffset end = 2;
+  int64 time = 3;
+}

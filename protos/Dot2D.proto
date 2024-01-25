@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package dottheory;
+
+import "ProtoOffset.proto";
+import "CollisionRecord.proto";
+import "LocationSwapRecord.proto";
+import "google/protobuf/wrappers.proto";
+
+message Dot2D {
+  int64 id = 1;
+  ProtoOffset position = 2;
+  ProtoOffset direction = 3;
+  google.protobuf.Int64Value connectedDotId = 4;
+
+  repeated CollisionRecord collisions = 5;
+  repeated ProtoOffset locationHistory = 6;
+  repeated LocationSwapRecord locationSwapHistory = 7;
+}
