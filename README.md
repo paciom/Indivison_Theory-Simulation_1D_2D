@@ -19,3 +19,5 @@ Then run `./ProtoToDart.sh' in Terminal to generate the protobuf files.
 run `dart watch_tests.dart ` in command line to monitor and auto run tests
 
 
+# New Theory of Everything - Indivison Theory
+https://github.com/paciom/Indivison_Theory
